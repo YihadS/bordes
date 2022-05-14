@@ -262,6 +262,8 @@ button {
 @media (max-width: 600px) {
 .form-group {
   max-width: 400px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 html, body{
@@ -269,8 +271,8 @@ html, body{
 }
 
 #design1, #design2, #design3{
-  height: 450px;
-  width: 450px;
+  height: 420px;
+  width: 420px;
 }
 
 #img_resultado{

@@ -273,7 +273,11 @@ html, body{
   height: 390px;
   width: 390px;
 }
-
+  .form-group img{
+  height:110px;
+  width:110px;
+  }
+  
 #img_resultado{
   height: 390px;
   width: 390px;

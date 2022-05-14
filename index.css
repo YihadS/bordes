@@ -274,8 +274,8 @@ html, body{
 }
 
 #img_resultado{
-  height: 450px;
-  width: 450px;
+  height: 420px;
+  width: 420px;
 }
 
 .card{
@@ -291,7 +291,7 @@ html, body{
 .resultado{
   position: absolute;
   top: 70px;
-  left: 5%;
+  left: 1%;
   z-index: 999;
   pointer-events: none;
   display: none;

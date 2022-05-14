@@ -268,16 +268,17 @@ button {
 
 html, body{
   overflow-y: visible;
+  overflow-x: hidden;
 }
 
 #design1, #design2, #design3{
-  height: 420px;
-  width: 420px;
+  height: 390px;
+  width: 390px;
 }
 
 #img_resultado{
-  height: 420px;
-  width: 420px;
+  height: 390px;
+  width: 390px;
 }
 
 .card{

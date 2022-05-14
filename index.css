@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "compass/css3";
+
+/* ===================== FILE INPUT ===================== */
+.file-area {
+  width: 100%;
+  position: relative;
+    }
+
+  input[type=file] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file-dummy {
+    width: 100%;
+    padding: 30px;
+    background: rgba(255,255,255,0.2);
+    border: 2px dashed rgba(255,255,255,0.2);
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+     }
+  
+   .file-dummy:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  input[type=file]:focus + .file-dummy {
+    outline: 2px solid rgba(255,255,255,0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+  
+  input[type=file]:valid + .file-dummy {
+    border-color: rgba(0,255,0,0.4);
+    background-color: rgba(0,255,0,0.3);
+}
+    .success {
+      display: none;
+    }
+    .default {
+      display: inline-block;
+    }
+
+
+/* ===================== BASIC STYLING ===================== */
+
+.resultado{
+  position: absolute;
+  top: 30px;
+  left: 30%;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+
+#img_resultado{
+  height: 600px;
+  width: 600px;
+  border: 30px solid transparent;
+  padding: 0px;
+  z-index: 0;
+}
+
+#design1, #design2, #design3{
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.card{
+  height: 500px;
+  width: 500px;
+  border: 0;
+  background: transparent;
+  z-index: 99;
+}
+
+.card-text{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: 9999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 9999;
+  color: white;
+  text-shadow: 0px 0px 0.5px #222222;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+   display: none;
+}
+
+.columna {
+  float: left;
+  width: 50%;
+}
+
+.overlay_inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-body{
+    z-index: 9999;
+    position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  height: 100%;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin: 4px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  overflow: hidden;
+   }
+
+ .opciones label{
+  display: inline-block;
+ }
+
+  span {
+    float: right;
+    text-transform: none;
+    font-weight: 200;
+    line-height: 1em;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+img {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  padding: 2vw;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+img:hover {
+  opacity:0.6;
+  cursor: pointer;
+}
+
+img:active {
+  opacity:0.4;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + label > img {
+  border: 2px solid rgb(255, 255, 255, 0.5);
+}
+
+.form-controll {
+  display: block;
+  padding: 8px 16px;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-weight: 200;
+  }
+
+.form-controll:focus {
+    outline: 2px solid rgba(255,255,255,0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+
+button {
+  padding: 8px 30px;
+  background: rgba(255,255,255,0.8);
+  color: #1aa656;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  border: 0;
+  text-shadow: 0 1px 2px #fff;
+  cursor: pointer;
+}
+
+.form-group {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.back-to-article {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 18px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+   }
+
+.back-to-article:hover {
+    opacity: 1;
+    background: rgba(0,0,0,0.8);
+  }
+
+/*Responsive*/
+
+@media (max-width: 600px) {
+.form-group {
+  max-width: 400px;
+}
+
+html, body{
+  overflow-y: visible;
+}
+
+#design1, #design2, #design3{
+  height: 450px;
+  width: 450px;
+}
+
+#img_resultado{
+  height: 450px;
+  width: 450px;
+}
+
+.card{
+  height: 300px;
+  width: 300px;
+}
+
+.columna {
+  float: none;
+  width: 100%;
+}
+
+.resultado{
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+  }

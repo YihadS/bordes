@@ -218,7 +218,6 @@ input[type=radio]:checked + label > img {
     outline: -webkit-focus-ring-color auto 5px;
   }
 
-
 button {
   padding: 8px 30px;
   background: rgba(255,255,255,0.8);
@@ -262,8 +261,7 @@ button {
 @media (max-width: 600px) {
 .form-group {
   max-width: 400px;
-  margin-left:10px;
-  margin-right:10px;
+  padding:10px;
 }
 
 html, body{

@@ -145,7 +145,8 @@ body {
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
   color: #fff;
   font-size: 16px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 h1 {

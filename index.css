@@ -266,7 +266,7 @@ button {
 }
 
 html, body{
-  overflow-y: hidden;
+  overflow-y: visible;
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;

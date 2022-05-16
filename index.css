@@ -283,6 +283,7 @@ html, body{
 #img_resultado{
   height: 500px;
   width: 350px;
+  border: 10px solid transparent;
 }
 
 .card{

@@ -175,10 +175,12 @@ btn.onclick = function() {
       });
     </script>
 	<script>
-	var size = document.getElementById("size").textContent;
-	
+setInterval(function(){
+var x = window.matchMedia('(max-width: 600px)')
+if (x.matches) {	
 var responsivo = setInterval(function(){
-size = "Tamaño recomendado: 350x500";
+document.getElementById("size").textContent= "Tamaño recomendado: 350x500";
+}
 },10);
 	</script>
 </body>

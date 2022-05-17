@@ -104,9 +104,9 @@
   padding-bottom: 20px;
   z-index: 9999;
   color: white;
-  text-shadow: 0px 0px 0.5px #222222;
+  text-shadow: 0px 0px 2px black;
   background: transparent;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
   font-family: Arealand;
 }

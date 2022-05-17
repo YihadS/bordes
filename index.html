@@ -33,7 +33,7 @@
     <label for="caption">Marcos<span>Selecciona un marco para decorar tu imagen</span></label>
 
 <div class="opciones">
-<input type="radio" name="marco" id="marco1" value="1" onclick="document.getElementById('design1').style.display='block'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none';
+<input type="radio" name="marco" id="marco1" value="1" onclick="document.getElementById('design1').style.display='block'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='20px';
 document.querySelector('.card-text').style.color='white';								
@@ -42,7 +42,7 @@ function myFunction() {
 document.querySelector('.card-text').style.left='46%';
 document.querySelector('.card-text').style.top='0px';
 document.querySelector('.card-text').style.color='white';
-document.getElementById('design1').src='img/marco1m.png'; 								
+document.getElementById('design1').src='img/1m.png'; 								
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -50,10 +50,10 @@ myFunction();"
 
  required/>
 <label for="marco1">
-   <img src="img/marco1.png" />
+   <img src="img/1.png" />
 </label>
 
-<input type="radio" name="marco" id="marco2" value="2" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='block'; document.getElementById('design3').style.display='none';
+<input type="radio" name="marco" id="marco2" value="2" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='block'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='410px';
 document.querySelector('.card-text').style.color='#004982';
@@ -63,7 +63,7 @@ function myFunction() {
 document.querySelector('.card-text').style.left='45%';
 document.querySelector('.card-text').style.top='350px';
 document.querySelector('.card-text').style.color='#004982';
-document.getElementById('design2').src='img/marco2m.png'; 
+document.getElementById('design2').src='img/2m.png'; 
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -71,12 +71,12 @@ myFunction();"
 
  required/>
 <label for="marco2">
-  <img src="img/marco2.png" />
+  <img src="img/2.png" />
 </label>
 
 <input type="radio" name="marco" id="marco3" value="3" onclick="
 document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; 
-document.getElementById('design3').style.display='block'; 
+document.getElementById('design3').style.display='block'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='55%';
 document.querySelector('.card-text').style.top='430px';
 document.querySelector('.card-text').style.color='#004982';
@@ -85,7 +85,7 @@ function myFunction() {
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='360px';
 document.querySelector('.card-text').style.color='#004982';
-document.getElementById('design3').src='img/marco3m.png'; 
+document.getElementById('design3').src='img/3m.png'; 
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -93,7 +93,28 @@ myFunction();"
 
 required/>
 <label for="marco3">
-  <img src="img/marco3.png" />
+  <img src="img/3.png" />
+</label>
+	
+<input type="radio" name="marco" id="marco4" value="4" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='block';
+document.querySelector('.card-text').style.left='50%';
+document.querySelector('.card-text').style.top='410px';
+document.querySelector('.card-text').style.color='#004982';
+
+function myFunction() {
+  if (x.matches) { // If media query matches
+document.querySelector('.card-text').style.left='45%';
+document.querySelector('.card-text').style.top='350px';
+document.querySelector('.card-text').style.color='#004982';
+document.getElementById('design2').src='img/4m.png'; 
+  } 
+}
+var x = window.matchMedia('(max-width: 600px)');
+myFunction();"
+
+ required/>
+<label for="marco4">
+  <img src="img/4.png" />
 </label>
 </div>
   </div>
@@ -112,9 +133,10 @@ required/>
   <div class="card" id="mi_imagen">
     <h5 class="card-text" id="txt_resultado" ></h5>
   <center><img class="card-img-top" src="" id="img_resultado">
-    <img class="card-img-top" src="img/marco1.png" id="design1">
-    <img class="card-img-top" src="img/marco2.png" id="design2">
-    <img class="card-img-top" src="img/marco3.png" id="design3">
+    <img class="card-img-top" src="img/1.png" id="design1">
+    <img class="card-img-top" src="img/2.png" id="design2">
+    <img class="card-img-top" src="img/3.png" id="design3">
+    <img class="card-img-top" src="img/4.png" id="design4">
 </div>
 </div>
  </div>

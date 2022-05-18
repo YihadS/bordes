@@ -22,8 +22,6 @@ images.onchange = function () {
 function mostrar_resultado(){
 	overlay.style.display="block";
     resultado.style.display="block";
-		if(document.getElementById("titlulo").value.lenght < 10){
-	document.querySelector(".card-text").style.fontSize = "34px";
 	}
 }
 

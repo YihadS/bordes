@@ -18,11 +18,17 @@ images.onchange = function () {
     }
 };
 
+function agrandar(){
+	if(document.getElementById("titlulo").value.lenght < 10){
+	document.querySelector(".card-text").style.fontSize = "34px";
+	}
+	}
+
 function mostrar_resultado(){
 	overlay.style.display="block";
     resultado.style.display="block";
+	agrandar();
 }
-
 
 
 

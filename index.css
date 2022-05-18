@@ -106,7 +106,7 @@
   color: white;
   text-shadow: 0px 0px 2px black;
   background: transparent;
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 500;
   font-family: Arealand;
 }
@@ -218,7 +218,7 @@ input[type=radio]:checked + label > img {
   background-color: rgba(255,255,255,0.2);
   border: 1px solid rgba(255,255,255,0.3);
   color: #fff;
-  font-weight: 200;
+  font-weight: 400;
   }
 
 .form-controll:focus {

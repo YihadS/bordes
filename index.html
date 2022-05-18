@@ -27,13 +27,13 @@
   
   <div class="form-group">
     <label for="title">Texto <span>Utiliza un texto para rellenar tu imagen</span></label>
-    <input type="text" name="title" id="titulo" class="form-controll" required />
+    <input type="text" name="title" id="titulo" maxlength="65" class="form-controll" required />
   </div>
   <div class="form-group" id="marcos-group">
     <label for="caption">Marcos<span>Selecciona un marco para decorar tu imagen</span></label>
 
 <div class="opciones">
-<input type="radio" name="marco" id="marco1" maxlength="65" value="1" onclick="document.getElementById('design1').style.display='block'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
+<input type="radio" name="marco" id="marco1" value="1" onclick="document.getElementById('design1').style.display='block'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='440px';
 document.querySelector('.card-text').style.color='#004982';
@@ -55,7 +55,7 @@ myFunction();"
    <img src="img/1.png" />
 </label>
 
-<input type="radio" name="marco" id="marco2" value="2" maxlength="65" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='block'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
+<input type="radio" name="marco" id="marco2" value="2" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='block'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='430px';
 document.querySelector('.card-text').style.color='#FC46AA';
@@ -78,7 +78,7 @@ myFunction();"
   <img src="img/2.png" />
 </label>
 
-<input type="radio" name="marco" id="marco3" value="3" maxlength="65" onclick="
+<input type="radio" name="marco" id="marco3" value="3" onclick="
 document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; 
 document.getElementById('design3').style.display='block'; document.getElementById('design4').style.display='none';
 document.querySelector('.card-text').style.left='48%';
@@ -103,7 +103,7 @@ required/>
   <img src="img/3.png" />
 </label>
 	
-<input type="radio" name="marco" id="marco4" value="4" maxlength="65" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='block';
+<input type="radio" name="marco" id="marco4" value="4" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='block';
 document.querySelector('.card-text').style.left='50%';
 document.querySelector('.card-text').style.top='430px';
 document.querySelector('.card-text').style.color='#004982';

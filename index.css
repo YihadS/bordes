@@ -277,6 +277,7 @@ html, body{
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom:50px;
 }
 
 #design1, #design2, #design3, #design4{

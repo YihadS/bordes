@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L685Z0MJPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  gtag('config', 'G-L685Z0MJPT');
+</script>
+    
+  
 
-	<title>Herramienta de Marcos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="css/fineCrop.css" rel="stylesheet" />
+  <link href="css/layout.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Banco Prodem</title>
 </head>
 <body>
 <div class="contenedor">
 
-	<form onsubmit="mostrar_resultado(); return false">
+  <form onsubmit="mostrar_resultado(); return false">
 
   <h1><strong>En Banco Prodem </strong> te ayudamos a demostrar tu amor por <strong>mamá</strong></h1>
    <div class="form-group file-area">
@@ -27,27 +40,29 @@
   
   <div class="form-group">
     <label for="title">Texto <span>Utiliza un texto para rellenar tu imagen</span></label>
-    <input type="text" name="title" id="titulo" maxlength="60" class="form-controll" required />
+    <input type="text" name="title" id="titulo" maxlength="55" class="form-controll" required />
   </div>
   <div class="form-group" id="marcos-group">
     <label for="caption">Marcos<span>Selecciona un marco para decorar tu imagen</span></label>
 
 <div class="opciones">
 <input type="radio" name="marco" id="marco1" value="1" onclick="document.getElementById('design1').style.display='block'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
-document.querySelector('.card-text').style.left='50%';
+document.querySelector('.card-text').style.left='43%';
 document.querySelector('.card-text').style.top='440px';
 document.querySelector('.card-text').style.color='#004982';
-document.querySelector('.card-text').style.maxWidth='60%';
+document.querySelector('.card-text').style.maxWidth='50%';
+if(document.querySelector('.card-text').innerHTML.length < 11){
+     document.querySelector('.card-text').style.fontSize = '38px';
+     } 
 
-								
 function myFunction() {
   if (x.matches) { // If media query matches
-document.querySelector('.card-text').style.left='46%';
-document.querySelector('.card-text').style.top='330px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='335px';
 document.querySelector('.card-text').style.color='#004982';
 document.getElementById('design1').src='img/1m.png'; 
-document.querySelector('.card-text').style.maxWidth='56%';
-
+document.querySelector('.card-text').style.maxWidth='50%';
+responsive();
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -59,20 +74,22 @@ myFunction();"
 </label>
 
 <input type="radio" name="marco" id="marco2" value="2" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='block'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='none';
-document.querySelector('.card-text').style.left='50%';
-document.querySelector('.card-text').style.top='430px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='440px';
 document.querySelector('.card-text').style.color='#FC46AA';
-document.querySelector('.card-text').style.maxWidth='60%';
-								
+document.querySelector('.card-text').style.maxWidth='50%';
+if(document.querySelector('.card-text').innerHTML.length < 11){
+     document.querySelector('.card-text').style.fontSize = '38px';
+     } 
 
 function myFunction() {
   if (x.matches) { // If media query matches
-document.querySelector('.card-text').style.left='45.5%';
-document.querySelector('.card-text').style.top='330px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='325px';
 document.querySelector('.card-text').style.color='#FC46AA';
 document.getElementById('design2').src='img/2m.png'; 
-document.querySelector('.card-text').style.maxWidth='55%';
-								
+document.querySelector('.card-text').style.maxWidth='50%';
+responsive();
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -86,20 +103,22 @@ myFunction();"
 <input type="radio" name="marco" id="marco3" value="3" onclick="
 document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; 
 document.getElementById('design3').style.display='block'; document.getElementById('design4').style.display='none';
-document.querySelector('.card-text').style.left='48%';
-document.querySelector('.card-text').style.top='420px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='435px';
 document.querySelector('.card-text').style.color='#FC46AA';
-document.querySelector('.card-text').style.maxWidth='60%';
-
-								
+document.querySelector('.card-text').style.maxWidth='50%';
+if(document.querySelector('.card-text').innerHTML.length < 11){
+     document.querySelector('.card-text').style.fontSize = '38px';
+     } 
+                
 function myFunction() {
   if (x.matches) { // If media query matches
-document.querySelector('.card-text').style.left='48%';
-document.querySelector('.card-text').style.top='330px';
+document.querySelector('.card-text').style.left='42.3%';
+document.querySelector('.card-text').style.top='325px';
 document.querySelector('.card-text').style.color='#FC46AA';
 document.getElementById('design3').src='img/3m.png';
-document.querySelector('.card-text').style.maxWidth='60%';
-							
+document.querySelector('.card-text').style.maxWidth='50%';
+responsive();
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -109,22 +128,24 @@ required/>
 <label for="marco3">
   <img src="img/3.png" />
 </label>
-	
+  
 <input type="radio" name="marco" id="marco4" value="4" onclick="document.getElementById('design1').style.display='none'; document.getElementById('design2').style.display='none'; document.getElementById('design3').style.display='none'; document.getElementById('design4').style.display='block';
-document.querySelector('.card-text').style.left='50%';
-document.querySelector('.card-text').style.top='430px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='435px';
 document.querySelector('.card-text').style.color='#004982';
-document.querySelector('.card-text').style.maxWidth='57%';
-
-								
+document.querySelector('.card-text').style.maxWidth='50%';
+if(document.querySelector('.card-text').innerHTML.length < 11){
+     document.querySelector('.card-text').style.fontSize = '38px';
+     } 
+                
 function myFunction() {
   if (x.matches) { // If media query matches
-document.querySelector('.card-text').style.left='44.5%';
-document.querySelector('.card-text').style.top='335px';
+document.querySelector('.card-text').style.left='43%';
+document.querySelector('.card-text').style.top='330px';
 document.querySelector('.card-text').style.color='#004982';
 document.getElementById('design4').src='img/4m.png'; 
-document.querySelector('.card-text').style.maxWidth='51%';
-								
+document.querySelector('.card-text').style.maxWidth='48%';
+responsive();
   } 
 }
 var x = window.matchMedia('(max-width: 600px)');
@@ -138,7 +159,7 @@ myFunction();"
   </div>
 
   <div class="form-group">
-  <center>  <button type="submit" id="crear">Crear Diseño</button></center>
+  <center>  <button type="submit" class="crear">Crear Diseño</button></center>
   </div>
 </form>
 </div>
@@ -160,30 +181,95 @@ myFunction();"
  </div>
 
 <div class="columna">
-  <button id="descarga">Descargar Imagen</button>
-  <button id="atras" onclick="location.reload();">Volver Atrás</button>
+  <button id="descarga" class="crear" style="z-index:99999;">Descargar Imagen</button>
+  <button id="atras" class="crear" onclick="location.reload();">Volver Atrás</button>
 </div>
   </div>
 </div>
 
 
- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
- <script src="dom-to-image.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
- <script src="function.js"></script>
+<div class="cropHolder" style="overflow-x='hidden;'">
+        <div id="cropWrapper">
+          <img id="inputImage" src="">
+        </div>
+        <div class="cropInputs">
+            <div class="inputtools">
+                <p>
+                    <span>
+                  
+                    </span>
+                    <span>Movimiento Horizontal</span>
+                </p>
+                <input type="range" class="cropRange" name="xmove" id="xmove" min="0" value="0">
+            </div>
+            <div class="inputtools">
+                <p>
+                    <span>
+              
+                    </span>
+                    <span>Movimiento Vertical</span>
+                </p>
+                <input type="range" class="cropRange" name="ymove" id="ymove" min="0" value="0">
+            </div>
+            <br>
+            <div class="botones">
+            <button class="cropButtons" id="zplus">
+                <img src="img/add.png">
+            </button>
+            <button class="cropButtons" id="zminus">
+                <img src="img/minus.png">
+            </button>
+            <br>
+            <button id="cropSubmit">Recortar</button>
+            <button id="closeCrop">Cerrar</button>
+            </div>
+        </div>
+    </div>
 
-<script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="js/dom-to-image.min.js"></script>
+  <script src="js/FileSaver.min.js" ></script>
+  <script src="js/fineCrop.js"></script>  
+ <script src="function.js"></script>
+ <script>
 var node = document.getElementById('mi_imagen');
 var btn = document.getElementById('descarga');
 btn.onclick = function() {
-  domtoimage.toBlob(document.getElementById('mi_imagen'))
-    .then(function(blob)
+  alert('Tu imagen se empezará a descargar pronto.')
+  domtoimage.toPng(document.getElementById('mi_imagen'))
+    .then(function(png)
      {
-     window.saveAs(blob, 'mi_imagen.png');
+     window.saveAs(png, 'mi_imagen.png');
    });
 }
 </script>
+ 
+        <script>
+        var bigScreen = window.matchMedia("(min-width: 601px)");
+if (bigScreen.matches){
+        $("#images").finecrop({
+            viewHeight: 500,
+            cropWidth: 600,
+            cropHeight: 600,
+            cropInput: 'inputImage',
+            cropOutput: 'img_resultado',
+            zoomValue: 50
+        });
+}
+
+        var smallScreen = window.matchMedia("(max-width: 600px)");
+if (smallScreen.matches){
+        $("#images").finecrop({
+            viewHeight: 500,
+            cropWidth: 265,
+            cropHeight: 400,
+            cropInput: 'inputImage',
+            cropOutput: 'img_resultado',
+            zoomValue: 50
+        });
+}
+    </script>
 
     <script>
       $(document).ready(function(){
@@ -192,13 +278,66 @@ btn.onclick = function() {
         });
       });
     </script>
-	<script>
+  <script>
 setInterval(function(){
 var x = window.matchMedia('(max-width: 600px)')
-if (x.matches) {	
+if (x.matches) {  
 document.getElementById("size").textContent= "Tamaño recomendado: 350x500";
-	}
+  }
 },10);
-	</script>
+  </script>
+  
+  <script>
+      function responsive(){
+          if(document.querySelector('.card-text').innerHTML.length > 25){
+     document.querySelector('.card-text').style.fontSize = '21px';
+     } 
+      }
+  </script>  
+    
 </body>
 </html>
+
+<style>
+    @media (max-width: 600px){
+        .inputtools{
+            display: inline-block;
+            width:50%;
+            margin:0;
+        }
+        .inputtools p{
+            display:none;
+        }
+        .cropInputs{
+            top:0;
+            bottom: initial;
+            height:100px;
+            overflow-x:hidden;
+            overflow-y:hidden;
+            z-index:9999999;
+            background:rgba(255,255,255,0.1);
+        }
+        
+        #closeCrop, #cropSubmit{
+            font-size:12px;
+        }
+         
+         #bgCanvas, #cropWrapper, #getCropped{
+             overflow-x:hidden;
+         }
+
+#design1, #design2, #design3, #design4{
+  height: 500px;
+  width: 325px;
+}
+#img_resultado{
+  height: 500px;
+  width: 325px;
+}
+
+.card{
+  height: 500px;
+  width: 325px;
+}
+    }
+</style>

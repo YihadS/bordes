@@ -1,6 +1,6 @@
 @font-face{
-	src:url(fonts/AREALAND.OTF);
-	font-family: Arealand;
+  src:url(fonts/AREALAND.OTF);
+  font-family: Arealand;
 } 
 
 
@@ -71,9 +71,6 @@
 }
 
 #img_resultado{
-  height: 600px;
-  width: 600px;
-  border: 30px solid transparent;
   padding: 0px;
   z-index: 0;
 }
@@ -88,8 +85,8 @@
 }
 
 .card{
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   border: 0;
   background: transparent;
   z-index: 99;
@@ -106,9 +103,11 @@
   color: white;
   text-shadow: 0px 0px 1px white;
   background: transparent;
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 500;
   font-family: Arealand;
+  word-wrap: break-word;
+  line-height:1;
 }
 
 .overlay{
@@ -149,7 +148,7 @@ body {
   padding: 0;
   font-weight: 300;
   height: 100%;
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background: #004A98;
   color: #fff;
   font-size: 16px;
   overflow-x: hidden;
@@ -185,7 +184,7 @@ label {
     opacity: 0.8;
   }
 
-img {
+.form-group img {
   display: inline-block;
   width: 170px;
   height: 170px;
@@ -196,12 +195,12 @@ input[type=radio] {
   display: none;
 }
 
-img:hover {
+.form-group img:hover {
   opacity:0.6;
   cursor: pointer;
 }
 
-img:active {
+.form-group img:active {
   opacity:0.4;
   cursor: pointer;
 }
@@ -227,6 +226,17 @@ input[type=radio]:checked + label > img {
   }
 
 button {
+  background: rgba(255,255,255,0.8);
+  color: #1aa656;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  border: 0;
+  text-shadow: 0 1px 2px #fff;
+  cursor: pointer;
+}
+
+.crear {
   padding: 8px 30px;
   background: rgba(255,255,255,0.8);
   color: #1aa656;
@@ -266,7 +276,7 @@ button {
 
 /*Responsive*/
 
-@media (max-width: 600px) {
+@media (min-width: 351px) and (max-width: 600px) {
 .form-group {
   max-width: 400px;
   padding:10px;
@@ -292,7 +302,6 @@ html, body{
 #img_resultado{
   height: 500px;
   width: 350px;
-  border: 10px solid transparent;
 }
 
 .card{
@@ -325,7 +334,87 @@ html, body{
    display: none;
     overflow:hidden;
 }
+
+.card-text{
+  font-size: 26px !important;
+
+}
+
+.botones{
+    display: inline-flex;
+}
+
+  #marcos-group{
+  margin-bottom: -15px;
+  }
+  }
   
+  @media (max-width: 350px) {
+  .form-group {
+  max-width: 400px;
+  padding:10px;
+}
+
+html, body{
+  overflow-y: visible;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom:50px;
+}
+
+#design1, #design2, #design3, #design4{
+  height: 457px;
+  width: 320px;
+}
+  .form-group img{
+  height:110px;
+  width:110px;
+  }
+  
+#img_resultado{
+  height: 500px;
+  width: 350px;
+  border: 10px solid transparent;
+}
+
+.card{
+  height: 457px;
+  width: 320px;
+}
+
+.columna {
+  float: none;
+  width: 100%;
+}
+
+.resultado{
+  position: absolute;
+  top: 70px;
+  left: 1%;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+  
+  .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+  overflow-x:hidden;
+  overflow-y:visible;
+}
+
+.card-text{
+  font-size: 26px !important;
+
+}
+
   #marcos-group{
   margin-bottom: -15px;
   }

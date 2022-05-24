@@ -23,7 +23,6 @@ function mostrar_resultado(){
 	overlay.style.display="block";
     resultado.style.display="block";
 	}
-}
 
 
 
